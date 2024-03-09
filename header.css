@@ -1,0 +1,199 @@
+body{
+    margin: 0px;
+}
+.informationhead{
+    background-color: #221f1f;
+}
+.informationh1{
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+.header{
+    background-color: #221f1f;
+    position: sticky;
+    top: 0px;
+    max-height: 300px;
+    z-index: 10;
+}
+.headergrid{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 0.5fr  9fr  1fr  0.5fr  0.5fr  0.5fr  0.5fr ;
+    height: 100%;
+    padding-top: 10px;
+    
+
+
+}
+
+.headerlogo{
+    max-width: 500px;
+    max-height: 60px;
+}
+.katalog{
+    padding-top:7px;
+
+}
+.katalogdiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.prekatalog{
+    color: white;
+    text-decoration: none;
+    height: 7px;
+    margin: 0px;
+    margin-top: 2px;
+    margin-left: 5px;
+    margin-right:10px ;
+}
+.prediv{
+    margin-bottom: 3px;
+}
+.buttonimg{
+    padding-top:0px;
+    height: 20px;
+    margin-left: 10px;
+}
+.katalogbutton{
+    background-color: rgb(75, 75, 75);
+    border-radius: 7px;
+    height: 39px;
+    border: 0;
+    width: 120px;
+    
+}
+.divua{
+    height: 10px; 
+    margin-top: 20px;
+}
+.katalogbutton:hover{
+    animation: ch-color-2 1s forwards 
+}
+.inputbutton{
+    margin-top: 9px;
+    padding: 10.4px;
+    color: white;
+    background-color: #00a046;
+    border: #00a046;
+    border: 5px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.inputbutton:hover{
+    animation: ch-color-1 1s forwards 
+}
+@keyframes ch-color-1 {
+
+    from {background-color: #00a046; }
+  
+    to {background-color: #00c756; }
+  
+  }
+  @keyframes ch-color-2 {
+
+    from { background-color: rgb(75, 75, 75); }
+  
+    to { background-color: rgb(139, 139, 139);}
+  
+  }
+.ua{
+    display: flex;
+    justify-content: center;
+}
+.headera{
+    width: 240px; 
+    height: 50px;
+}
+.headera2{
+    width: 60px; 
+    height: 50px;
+    opacity: 0;
+}
+@media screen and (max-width: 1380px) {
+    .headera{
+        visibility: hidden;
+        position: absolute;
+    }
+    .headera2{
+        opacity: 1;
+    }
+    .headergrid{
+        grid-template-columns: 0.5fr 1fr 0.5fr  9fr  1fr  0.5fr  0.5fr  0.5fr  0.5fr ;
+    }
+    .headera{
+        visibility: hidden;
+        position: absolute;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .divua{
+        visibility: hidden;
+        position: absolute;
+    }
+    .divru{
+        visibility: hidden;
+        position: absolute;
+    }
+    .headergrid{
+        grid-template-columns: 0.5fr 1fr 0.5fr  9fr  1fr    0.5fr  0.5fr  0.5fr ;
+    }
+    .divuser{
+        padding-left: 10px;
+    }
+    .divkor{
+        padding-left: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .katalog{
+        visibility: hidden;
+        position: absolute;
+        
+    }
+    .headergrid{
+        grid-template-columns: 0.5fr 1fr 9fr  1fr  0.5fr  0.5fr  0.5fr ;
+    }
+    .informationh1{
+        visibility: hidden;
+        position: absolute;
+    }
+    .headerlogo{
+        padding-top: 2px;
+    }
+}
+
+
+
+.d{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    pointer-events: all;
+}
+.okno{
+    position: absolute;
+    height: 1000px;
+    max-width: 300px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 20;
+    left: -1900px;
+    top: 0px;
+    transition: transform .4s;
+    pointer-events: none;
+}
+.header.open .okno {
+    transform: translateX(1900px)
+}
+
+.siderr{
+    width: 100%;
+    height: 50px; 
+    background-color: red;
+
+}
+.siderr:hover{
+    background-color: green;
+}
