@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Тестування з предмету ..</title>
+<script>
+function perevirka (tests) {
+var i=0;
+if (tests.one [1].checked) {i++;}
+if (tests.two[0].checked) {i++;}
+if (tests.three [2].checked) {i++;}
+document.tests.druk.value = i;
+}
+</script>
+</head>
+<body>
+<h3>Тестування з предмету ...</h3>
+<form method="post" name="tests">
+2+2=? <br><br>
+<input type="radio" name="one" value="1">5 <br>
+<input type="radio" name="one" value="2">4 <br>
+<input type="radio" name="one" value="3">3<br><br>
+3+3=? <br><br>
+<input type="radio" name="two" value="1">6<br> <input type="radio" name="two" value="2">5<br>
+<input type="radio" name="two" value="3">7<br><br>
+4+4=? <br><br>
+<input type="radio" name="three" value="1">7<br>
+<input type="radio" name="three" value="2">9<br>
+<input type="radio" name="three" value="3">8<br><br>
+textarea cols="2" name="druk" rows="1"></textarea> <
+<input name="check" onclick="perevirka (this.form)" type="button" value="Кількість правильних відповідей">
+<input type="reset" value="ОНОВИТИ ФОРМУ">
+</form>
+</body>
+</html>
